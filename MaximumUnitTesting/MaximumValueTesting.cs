@@ -47,5 +47,50 @@ namespace MaximumUnitTesting
             Assert.AreEqual(100, max);
 
         }
+        [TestMethod] ////Maximum Value at Position 1
+        ////TC.2.1
+
+        public void GIVEN_THREE_DECIMALS_1ST_NUMBER_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            double[] doubleArray = { 5.9, 2.1,3.1 };
+            Maximum<double> maxnum = new Maximum<double>(doubleArray);
+
+            double max = maxnum.MaxValue(5.9, 2.1, 3.1);
+
+            Assert.AreEqual(5.9, max);
+
+
+
+        }
+        [TestMethod] ////Maximum Value at Position 2
+        ////TC.2.2
+
+        public void GIVEN_THREE_DECIMALS_2ND_NUMBER_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            double[] doubleArray = { 2.1,5.9,3.1 };
+            Maximum<double> maxnum = new Maximum<double>(doubleArray);
+
+            double max = maxnum.MaxValue(2.1, 5.9, 3.1);
+
+            Assert.AreEqual(5.9, max);
+
+
+
+        }
+        [TestMethod] ////Maximum Value at Position 3
+        ////TC.2.3
+
+        public void GIVEN_THREE_DECIMALS_3RD_NUMBER_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            double[] doubleArray = { 2.1,3.1, 5.9};
+            Maximum<double> maxnum = new Maximum<double>(doubleArray);
+
+            double max = maxnum.MaxValue(2.1, 3.1, 5.9);
+
+            Assert.AreEqual(5.9, max);
+
+
+
+        }
     }
 }
