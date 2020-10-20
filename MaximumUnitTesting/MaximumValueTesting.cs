@@ -92,5 +92,54 @@ namespace MaximumUnitTesting
 
 
         }
+        [TestMethod] ////Maximum Value at Position 1
+                     ////TC.3.1
+
+        public void GIVEN_THREE_STRINGS_1ST_STRING_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            string[] stringArray = { "33", "10", "9" };
+            Maximum<string> maxnum = new Maximum<string>(stringArray);
+
+            string max = maxnum.MaxValue("33", "10", "9");
+
+            Assert.AreEqual("33", max);
+
+
+
+        }
+        [TestMethod] ////Maximum Value at Position 2
+                     ////TC.3.2
+
+        public void GIVEN_THREE_STRINGS_2nd_STRING_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            string[] stringArray = { "33", "100", "9" };
+            Maximum<string> maxnum = new Maximum<string>(stringArray);
+
+            string max = maxnum.MaxValue("33", "100", "9");
+
+            Assert.AreEqual("100", max);
+
+
+
+        }
+        [TestMethod] ////Maximum Value at Position 3
+                     ////TC.3.3
+
+        public void GIVEN_THREE_STRINGS_3rd_STRING_SHOULD_RETURN_MAXIMUM_VALUE()
+        {
+            string[] stringArray = { "33", "100", "900" };
+            Maximum<string> maxnum = new Maximum<string>(stringArray);
+
+            string max = maxnum.MaxValue("33", "100", "900");
+
+            Assert.AreEqual("900", max);
+
+
+
+        }
+
+
     }
 }
+    
+

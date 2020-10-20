@@ -28,6 +28,18 @@ namespace TestMaximum
             double[] doubleArray = { x, y, z };
             Maximum<double> genericDouble = new Maximum<double>(doubleArray);
             genericDouble.PrintMaxValue();
+
+            Console.WriteLine("Enter first value: ");
+            string value1 = Console.ReadLine();
+            Console.WriteLine("Enter second value: ");
+            string value2 = Console.ReadLine();
+            Console.WriteLine("Enter third value: ");
+            string value3 = Console.ReadLine();
+
+            string[] stringArray = {value1,value2,value3 };
+            Maximum<string> genericString = new Maximum<string>(stringArray);
+            genericString.PrintMaxValue();
+
         }
     }
     
